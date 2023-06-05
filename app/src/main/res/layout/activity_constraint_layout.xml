@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintLayoutActivity">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="wrap_content"
+        android:layout_height="215dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="0.2">
+
+    </View>
+
+    <ImageView
+        android:layout_width="144dp"
+        android:layout_height="128dp"
+
+        android:contentDescription="User profile"
+        android:src="@drawable/user"
+        app:layout_constraintBottom_toBottomOf="@+id/top_view"
+        app:layout_constraintEnd_toEndOf="@+id/top_view"
+        app:layout_constraintStart_toStartOf="@+id/top_view"
+        app:layout_constraintTop_toTopOf="@+id/top_view"
+        app:layout_constraintVertical_weight="0.5" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="317dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_view" />
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="18dp"
+        android:text="Nombre"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_view" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="251dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Daniel"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nameLabel"
+        app:layout_constraintTop_toTopOf="@+id/top_view" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="317dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/lastNameLabel"
+        android:layout_width="81dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="19dp"
+        android:text="Primer Apellido"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/lastNameInput"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Zúñiga"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nameLabel"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="317dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <TextView
+        android:id="@+id/secondLastNameLabel"
+        android:layout_width="84dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="23dp"
+        android:text="Segundo Apellido"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <EditText
+        android:id="@+id/secondLastNameInput"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Rojas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nameLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="317dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@+id/saveProfileBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="26dp"
+        android:text="Teléfono"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <EditText
+        android:id="@+id/phoneInput"
+        android:layout_width="246dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="88888888"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nameLabel"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <Button
+        android:id="@+id/saveProfileBtn"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#673AB7"
+        android:text="Guardar perfil"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
